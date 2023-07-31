@@ -1,0 +1,53 @@
+
+body {
+
+    font-size: 12pt;
+  
+    font-family: Verdana;
+  
+    color: black;
+  
+    line-height: 15pt;
+  
+    padding-left: 35pt;
+  
+    padding-right: 35pt;
+  
+    padding-top: 35pt;
+  
+    background: #9deaea; 
+
+
+    main { display: flex; }
+    main > article { order: 2; min-width: 12em; flex:1; }
+    main > nav     { order: 1; width: 200px; }
+    main > aside   { order: 3; width: 200px; }
+    
+    @media all and (max-width: 680px) {
+        /* Too narrow to support three columns */
+        main { flex-flow: column; }
+        main > article, main > nav, main > aside {
+          /* Return them to document order */
+          order: 0; width: auto;
+        }
+      } }
+  
+  
+  div.footer {
+  
+    font-size: 12pt;
+  
+    font-style: italic;
+  
+    line-height: 14pt;
+  
+    text-align: center;
+  
+    padding-top: 24pt;
+  
+  }
+
+ 
+ 
+
+      
